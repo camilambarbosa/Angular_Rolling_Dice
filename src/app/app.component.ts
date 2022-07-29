@@ -1,3 +1,8 @@
+//Camila Miranda Barbosa  ID:991622796
+//SYST24444 Mobile Web-Based Application Development
+//Summer 29-July 2022
+//Assignment03
+
 import { Component } from '@angular/core';
 import { Die } from './die';
 
