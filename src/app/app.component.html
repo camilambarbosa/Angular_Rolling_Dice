@@ -1,0 +1,30 @@
+<h1>
+  Camila's Dice
+</h1>
+<h2>
+  Roll the Dice
+</h2>
+<div>
+  <img *ngFor="let die of dice" src="assets/images/dice/side_{{die.getSide()}}.png" />
+</div>
+
+<div>
+  <b>
+    Total: {{total}}
+  </b>
+</div>
+
+
+<label for="numberOfDice">Choose number of dice:</label>
+<select name="numberOfDice" id="numberOfDice" (change)="changeNumberOfDice($event)" >
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+</select>
+
+<div>
+  <button (click)="rollDice()">Roll the dice</button>
+</div>
